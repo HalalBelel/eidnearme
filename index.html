@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2025 Sydney Eid Al-Fitr Locations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* General Body Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7f9;
+      color: #333;
+      padding-bottom: 60px; /* for footer */
+    }
+    /* Splash Screen Styling */
+    #splashScreen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      padding: 20px;
+    }
+    #splashScreen h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+    }
+    #splashScreen h2 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      font-weight: normal;
+    }
+    #splashScreen input {
+      width: 80%;
+      max-width: 300px;
+      padding: 12px;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 1em;
+      text-align: center;
+      color: #333;
+    }
+    #splashScreen input::placeholder {
+      color: #888;
+    }
+    /* Initially hide the Continue button until data is loaded */
+    #continueBtn {
+      display: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      background: #fff;
+      color: #2575fc;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    #continueBtn:hover {
+      background: #e0e0e0;
+    }
+    /* Results Screen Styling */
+    #resultsScreen {
+      display: none;
+      padding: 20px;
+    }
+    #resultsScreen header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #resultsScreen header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #2575fc;
+    }
+    #newSearchBtn {
+      margin: 10px auto 20px;
+      display: block;
+      padding: 10px 15px;
+      font-size: 1em;
+      background: #2575fc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /* Loading Message with Spinner */
+    #loadingMessage {
+      text-align: center;
+      font-size: 1em;
+      color: #333;
+      margin: 10px;
+    }
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border-left-color: #09f;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    /* Table Styles */
+    #eventsTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    #eventsTable th, #eventsTable td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    /* Freeze headers using sticky positioning */
+    #eventsTable th {
+      background: #f2f2f2;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      cursor: pointer;
+    }
+    .sort-icon {
+      font-size: 0.8em;
+    }
+    /* Footer Version Stamp */
+    #footerVersion {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splashScreen">
+    <h1>2025 Sydney Eid Al-Fitr Locations</h1>
+    <h2>Enter your postcode or suburb</h2>
+    <input type="text" id="originInput" placeholder="2200 – Input postcode or Suburb" list="postcodesDatalist" />
+    <button id="continueBtn" onclick="continueToResults()">Continue</button>
+    <datalist id="postcodesDatalist"></datalist>
+  </div>
+
+  <!-- Results Screen -->
+  <div id="resultsScreen">
+    <header>
+      <h1>Event Results</h1>
+    </header>
+    <button id="newSearchBtn" onclick="showSplash()">New Search</button>
+    <div id="loadingMessage"></div>
+    <table id="eventsTable">
+      <thead>
+        <tr>
+          <th class="sortable" data-field="distance">Distance (km)<span class="sort-icon"></span></th>
+          <th class="sortable" data-field="datetime">Date/Time<span class="sort-icon"></span></th>
+          <th class="sortable" data-field="venue">Venue<span class="sort-icon"></span></th>
+        </tr>
+      </thead>
+      <tbody id="eventsBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Footer Version Stamp -->
+  <div id="footerVersion"></div>
+
+  <script>
+    // Set footer version stamp.
+    const modifiedDate = new Date(document.lastModified);
+    document.getElementById("footerVersion").textContent =
+      "Version: " + modifiedDate.toLocaleDateString("en-AU") + " " + modifiedDate.toLocaleTimeString("en-AU");
+
+    // Global variables.
+    let events = [];          // Loaded from events.json.
+    let postcodes = [];       // Loaded from postcodes.json.
+    let postcodesLoaded = false;
+    let displayedEvents = []; // Events to display.
+    let currentSort = { field: "distance", ascending: true };
+
+    // Simple compare function.
+    function compareValues(valA, valB) {
+      if (typeof valA === "string" && typeof valB === "string") {
+        valA = valA.toUpperCase();
+        valB = valB.toUpperCase();
+      }
+      if (valA < valB) return -1;
+      if (valA > valB) return 1;
+      return 0;
+    }
+
+    // Merge venue text: "Area - Venue" (or event.name).
+    function getMergedVenue(event) {
+      const venueText = event.venue || event.name || "Unnamed Event";
+      return (event.area ? event.area + " - " : "") + venueText;
+    }
+
+    // For display, simply use the event.datetime field.
+    function getDatetimeDisplay(event) {
+      return event.datetime || "N/A";
+    }
+
+    // Composite sort.
+    function compositeSort(a, b) {
+      let cmp = 0;
+      if (currentSort.field === "distance") {
+        cmp = compareValues(a.distance, b.distance);
+        if (cmp === 0) cmp = compareValues(a.datetime || "", b.datetime || "");
+        if (cmp === 0) cmp = compareValues(getMergedVenue(a), getMergedVenue(b));
+      } else if (currentSort.field === "datetime") {
+        cmp = compareValues(a.datetime || "", b.datetime || "");
+        if (cmp === 0) cmp = compareValues(a.distance, b.distance);
+        if (cmp === 0) cmp = compareValues(getMergedVenue(a), getMergedVenue(b));
+      } else if (currentSort.field === "venue") {
+        cmp = compareValues(getMergedVenue(a), getMergedVenue(b));
+        if (cmp === 0) cmp = compareValues(a.distance, b.distance);
+        if (cmp === 0) cmp = compareValues(a.datetime || "", b.datetime || "");
+      }
+      return currentSort.ascending ? cmp : -cmp;
+    }
+
+    // Update sort icons.
+    function updateSortIcons() {
+      document.querySelectorAll("th.sortable").forEach(header => {
+        const field = header.getAttribute("data-field");
+        const iconSpan = header.querySelector(".sort-icon");
+        if (field === currentSort.field) {
+          iconSpan.textContent = currentSort.ascending ? " ▲" : " ▼";
+        } else {
+          iconSpan.textContent = "";
+        }
+      });
+    }
+
+    // Enhanced findLocation: matches postcode or suburb.
+    function findLocation(query) {
+      query = query.trim().toUpperCase();
+      let record = postcodes.find(item =>
+        item.postcode === query || item.locality.toUpperCase() === query
+      );
+      if (!record) {
+        record = postcodes.find(item =>
+          item.locality.toUpperCase().includes(query)
+        );
+      }
+      return record;
+    }
+
+    // Populate the datalist for autocomplete.
+    function populateDatalist() {
+      const dataList = document.getElementById("postcodesDatalist");
+      const suggestions = new Set();
+      postcodes.forEach(item => {
+        suggestions.add(item.postcode);
+        suggestions.add(item.locality);
+      });
+      suggestions.forEach(suggestion => {
+        const option = document.createElement("option");
+        option.value = suggestion;
+        dataList.appendChild(option);
+      });
+    }
+
+    // Load events.json and postcodes.json concurrently.
+    function loadData() {
+      Promise.all([
+        fetch('events.json').then(response => response.json()),
+        fetch('postcodes.json').then(response => response.json())
+      ])
+      .then(([eventsData, postcodesData]) => {
+        events = eventsData;
+        postcodes = postcodesData;
+        postcodesLoaded = true;
+        // For initial load, assign defaultRank as distance if available.
+        events.forEach(event => {
+          if (event.defaultRank !== undefined) {
+            event.distance = parseFloat(event.defaultRank);
+          }
+        });
+        displayedEvents = events.slice();
+        populateDatalist();
+        // Once data is preloaded, show the Continue button.
+        document.getElementById("continueBtn").style.display = "inline-block";
+      })
+      .catch(error => console.error("Error loading JSON files:", error));
+    }
+
+    // When "Continue" is clicked.
+    function continueToResults() {
+      let originQuery = document.getElementById('originInput').value;
+      if (!originQuery) {
+        originQuery = "2200";
+      }
+      // Hide splash screen and show results screen.
+      document.getElementById("splashScreen").style.display = "none";
+      document.getElementById("resultsScreen").style.display = "block";
+      // Scroll to top.
+      window.scrollTo(0, 0);
+      // If postcodes are loaded, perform search; otherwise, use defaultRank order.
+      if (!postcodesLoaded) {
+        renderEventsTable(displayedEvents);
+      } else {
+        searchAndSortResults(originQuery);
+      }
+    }
+
+    // Perform search based on originQuery.
+    function searchAndSortResults(originQuery) {
+      const loadingDiv = document.getElementById("loadingMessage");
+      loadingDiv.innerHTML = '<div class="spinner"></div> Loading...';
+      const originLocation = findLocation(originQuery);
+      if (!originLocation) {
+        loadingDiv.textContent = "";
+        alert('Origin location not found in the postcode data.');
+        return;
+      }
+      // Compute distance for each event.
+      displayedEvents = events.map(event => {
+        const eventLocation = findLocation(event.area);
+        if (eventLocation) {
+          event.distance = haversine(originLocation.lat, originLocation.long, eventLocation.lat, eventLocation.long);
+        } else if (event.defaultRank !== undefined) {
+          event.distance = parseFloat(event.defaultRank);
+        } else {
+          event.distance = Infinity;
+        }
+        return event;
+      });
+      // Default sort by distance.
+      currentSort = { field: "distance", ascending: true };
+      displayedEvents.sort(compositeSort);
+      renderEventsTable(displayedEvents);
+      loadingDiv.textContent = "";
+    }
+
+    // Render the events table.
+    function renderEventsTable(eventsArray) {
+      const tbody = document.getElementById('eventsBody');
+      tbody.innerHTML = '';
+      eventsArray.forEach(event => {
+        const row = document.createElement('tr');
+        // Distance cell.
+        const distanceCell = document.createElement('td');
+        if (event.distance !== undefined && isFinite(event.distance)) {
+          distanceCell.textContent = event.distance.toFixed(2);
+        } else if (event.defaultRank !== undefined) {
+          distanceCell.textContent = parseFloat(event.defaultRank).toFixed(2);
+        } else {
+          distanceCell.textContent = 'N/A';
+        }
+        row.appendChild(distanceCell);
+        // Date/Time cell.
+        const datetimeCell = document.createElement('td');
+        datetimeCell.textContent = event.datetime || "N/A";
+        row.appendChild(datetimeCell);
+        // Venue cell.
+        const venueCell = document.createElement('td');
+        const mergedText = getMergedVenue(event);
+        if (event.gmaps) {
+          const link = document.createElement('a');
+          link.href = event.gmaps;
+          link.target = "_blank";
+          link.textContent = mergedText;
+          venueCell.appendChild(link);
+        } else {
+          venueCell.textContent = mergedText;
+        }
+        row.appendChild(venueCell);
+        tbody.appendChild(row);
+      });
+      updateSortIcons();
+    }
+
+    // Haversine formula.
+    function haversine(lat1, lon1, lat2, lon2) {
+      const R = 6371;
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLon = (lon2 - lon1) * Math.PI / 180;
+      const a = Math.sin(dLat / 2) ** 2 +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLon / 2) ** 2;
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    }
+
+    // Sort displayed events by a given field.
+    function sortDisplayedEvents(field) {
+      if (currentSort.field === field) {
+        currentSort.ascending = !currentSort.ascending;
+      } else {
+        currentSort.field = field;
+        currentSort.ascending = true;
+      }
+      displayedEvents.sort(compositeSort);
+      renderEventsTable(displayedEvents);
+    }
+
+    // Attach click listeners to header cells.
+    document.querySelectorAll("th.sortable").forEach(header => {
+      header.addEventListener("click", function() {
+        const field = this.getAttribute("data-field");
+        sortDisplayedEvents(field);
+      });
+    });
+
+    // Return to splash screen.
+    function showSplash() {
+      document.getElementById("resultsScreen").style.display = "none";
+      document.getElementById("splashScreen").style.display = "flex";
+      window.scrollTo(0, 0);
+    }
+
+    // Preload events and postcodes on DOMContentLoaded.
+    window.addEventListener('DOMContentLoaded', loadData);
+  </script>
+</body>
+</html>
