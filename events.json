@@ -1,398 +1,583 @@
 [
   {
-    "type": "🔵",
+    "datetime": "Tue 1/4 07:30",
+    "area": "Angus",
+    "venue": "Marsden Park Masjid",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid,+Angus,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:30",
+    "area": "Angus",
+    "venue": "Marsden Park Masjid",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid,+Angus,+NSW"
+  },
+  {
     "datetime": "Mon 31/3 07:30",
-    "dateSort": 0,
-    "area": "Condell Park",
-    "venue": "Bankstown basketball stadium UMA",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Bankstown+basketball+stadium+UMA,+Condell+Park,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:15",
-    "dateSort": 0,
-    "area": "Condell Park",
-    "venue": "Bankstown markets ASWJ",
-    "sortTime": 495,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Bankstown+markets+ASWJ,+Condell+Park,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:00",
-    "dateSort": 1,
-    "area": "BANKSTOWN",
-    "venue": "Abu Baker Mosque",
-    "sortTime": 420,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Abu+Baker+Mosque,+BANKSTOWN,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "BANKSTOWN",
-    "venue": "The Velodrome",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=The+Velodrome,+BANKSTOWN,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "YAGOONA",
-    "venue": "O'Neill Park",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=O'Neill+Park,+YAGOONA,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "PUNCHBOWL",
-    "venue": "Punchbowl Mosque",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Punchbowl+Mosque,+PUNCHBOWL,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:30",
-    "dateSort": 0,
-    "area": "AUBURN",
+    "area": "Auburn",
     "venue": "Masjid Omar",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+Omar,+AUBURN,+NSW"
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+Omar,+Auburn,+NSW"
   },
   {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:00",
-    "dateSort": 1,
-    "area": "CHESTER HILL",
-    "venue": "Masjid As Salam",
-    "sortTime": 420,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+As+Salam,+CHESTER+HILL,+NSW"
-  },
-  {
-    "type": "🔵🟠",
-    "datetime": "Mon 31/3 and Tue 01/4 08:45",
-    "dateSort": 0,
-    "area": "LAKEMBA",
-    "venue": "Parry Park",
-    "sortTime": 525,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park,+LAKEMBA,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "PRESTONS",
-    "venue": "Amity College Prestons",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Amity+College+Prestons,+PRESTONS,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:30",
-    "dateSort": 1,
-    "area": "HURSTVILLE",
-    "venue": "Hurstville Aquatic Centre",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Hurstville+Aquatic+Centre,+HURSTVILLE,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:00",
-    "dateSort": 1,
-    "area": "LIVERPOOL",
-    "venue": "Al Iman Mosque",
-    "sortTime": 420,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Al+Iman+Mosque,+LIVERPOOL,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "LIVERPOOL",
-    "venue": "Woodward Park",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Woodward+Park,+LIVERPOOL,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:15",
-    "dateSort": 0,
-    "area": "PARRAMATTA",
-    "venue": "Parramatta Mosque",
-    "sortTime": 435,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parramatta+Mosque,+PARRAMATTA,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:15",
-    "dateSort": 0,
-    "area": "KENSINGTON",
-    "venue": "ISOC UNSW",
-    "sortTime": 435,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=ISOC+UNSW,+KENSINGTON,+NSW"
-  },
-  {
-    "type": "🔵",
     "datetime": "Mon 31/3 07:30",
-    "dateSort": 0,
-    "area": "HINCHINBROOK",
-    "venue": "Masjid Bilal",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+Bilal,+HINCHINBROOK,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:00",
-    "dateSort": 1,
-    "area": "MILLER",
-    "venue": "Miller Center",
-    "sortTime": 420,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Miller+Center,+MILLER,+NSW"
-  },
-  {
-    "type": "🔵🟠",
-    "datetime": "Mon 31/3, Tue 01/4 08:00",
-    "dateSort": 0,
-    "area": "MACQUARIE FIELDS",
-    "venue": "Milton Park",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Milton+Park,+MACQUARIE+FIELDS,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:30",
-    "dateSort": 0,
-    "area": "MARSFIELD",
-    "venue": "Marsfield Community Centre",
-    "sortTime": 510,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsfield+Community+Centre,+MARSFIELD,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 08:00",
-    "dateSort": 1,
-    "area": "MACQUARIE PARK",
-    "venue": "Old Graduation Lawn",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Old+Graduation+Lawn,+MACQUARIE+PARK,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 09:00",
-    "dateSort": 0,
-    "area": "ST MARYS",
-    "venue": "St Marys Memorial Hall",
-    "sortTime": 540,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=St+Marys+Memorial+Hall,+ST+MARYS,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 08:00",
-    "dateSort": 1,
-    "area": "EPPING",
-    "venue": "Boronia Grove Community Centre",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Boronia+Grove+Community+Centre,+EPPING,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:30",
-    "dateSort": 0,
-    "area": "AUSTRAL",
+    "area": "Austral",
     "venue": "Unity Grammar",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Unity+Grammar,+AUSTRAL,+NSW"
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Unity+Grammar,+Austral,+NSW"
   },
   {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:45",
-    "dateSort": 0,
-    "area": "MINTO",
-    "venue": "Minto Netball Courts",
-    "sortTime": 465,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Minto+Netball+Courts,+MINTO,+NSW"
+    "datetime": "Mon 31/3 08:15",
+    "area": "Bankstown",
+    "venue": "Bankstown Markets",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Bankstown+Markets,+Bankstown,+NSW"
   },
   {
-    "type": "🟠",
-    "datetime": "Tue 01/4 08:00",
-    "dateSort": 1,
-    "area": "BEECROFT",
+    "datetime": "Tue 1/4 07:00",
+    "area": "Bankstown",
+    "venue": "Abu Baker Mosque",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Abu+Baker+Mosque,+Bankstown,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Beecroft",
     "venue": "Carlingford",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Carlingford,+BEECROFT,+NSW"
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Carlingford,+Beecroft,+NSW"
   },
   {
-    "type": "🟠",
-    "datetime": "Tue 01/4 08:30",
-    "dateSort": 1,
-    "area": "ROOTY HILL",
-    "venue": "Rooty Hill Leisure Centre",
-    "sortTime": 510,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Rooty+Hill+Leisure+Centre,+ROOTY+HILL,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 09:00",
-    "dateSort": 1,
-    "area": "INGLEBURN",
-    "venue": "Ingleburn Library",
-    "sortTime": 540,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Ingleburn+Library,+INGLEBURN,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:30",
-    "dateSort": 0,
-    "area": "MAROUBRA",
-    "venue": "Heffron Centre Maroubra",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Heffron+Centre+Maroubra,+MAROUBRA,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "STANHOPE GARDENS",
-    "venue": "Stanhope Leisure Centre",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Stanhope+Leisure+Centre,+STANHOPE+GARDENS,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:30",
-    "dateSort": 0,
-    "area": "QUAKERS HILL",
-    "venue": "Quakers Hill Park",
-    "sortTime": 510,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Quakers+Hill+Park,+QUAKERS+HILL,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "EMERTON",
-    "venue": "Lowles Leisure Centre",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Lowles+Leisure+Centre,+EMERTON,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:45",
-    "dateSort": 0,
-    "area": "LETHBRIDGE PARK",
-    "venue": "Lethbridge Park Masjid",
-    "sortTime": 465,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Lethbridge+Park+Masjid,+LETHBRIDGE+PARK,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:30",
-    "dateSort": 1,
-    "area": "Mount Druitt",
-    "venue": "Quba Mosque",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Quba+Mosque,+Mount+Druitt,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 08:00",
-    "dateSort": 1,
-    "area": "HARRINGTON PARK",
-    "venue": "Harrington Park Community Centre",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Harrington+Park+Community+Centre,+HARRINGTON+PARK,+NSW"
-  },
-  {
-    "type": "🔵🟠",
-    "datetime": "Mon 31/3, Tue 01/4 08:00",
-    "dateSort": 0,
-    "area": "RIVERSTONE",
-    "venue": "Marsden Park Masjid",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid,+RIVERSTONE,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:30",
-    "dateSort": 1,
-    "area": "ANGUS",
-    "venue": "Marsden Park Masjid",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid,+ANGUS,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 07:00",
-    "dateSort": 1,
-    "area": "CAMPBELLTOWN",
+    "datetime": "Tue 1/4 07:00",
+    "area": "Campbelltown",
     "venue": "67 Johnson Rd",
-    "sortTime": 420,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=67+Johnson+Rd,+CAMPBELLTOWN,+NSW"
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=67+Johnson+Rd,+Campbelltown,+NSW"
   },
   {
-    "type": "🔵",
+    "datetime": "Tue 1/4 07:00",
+    "area": "Chester Hill",
+    "venue": "Masjid As Salam",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+As+Salam,+Chester+Hill,+NSW"
+  },
+  {
     "datetime": "Mon 31/3 07:30",
-    "dateSort": 0,
-    "area": "LEUMEAH",
-    "venue": "Campbelltown Masjid",
-    "sortTime": 450,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Campbelltown+Masjid,+LEUMEAH,+NSW"
+    "area": "Condell Park",
+    "venue": "Bankstown Basketball Stadium",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Bankstown+Basketball+Stadium,+Condell+Park,+NSW"
   },
   {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:45",
-    "dateSort": 0,
-    "area": "ORAN PARK",
-    "venue": "Oran Park Leisure Centre",
-    "sortTime": 465,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Oran+Park+Leisure+Centre,+ORAN+PARK,+NSW"
-  },
-  {
-    "type": "🟠",
-    "datetime": "Tue 01/4 08:00",
-    "dateSort": 1,
-    "area": "RICHMOND",
-    "venue": "Richmond Masjid",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Richmond+Masjid,+RICHMOND,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 09:00",
-    "dateSort": 0,
-    "area": "SOUTH WINDSOR",
-    "venue": "Hawksbury Indoor Stadium",
-    "sortTime": 540,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Hawksbury+Indoor+Stadium,+SOUTH+WINDSOR,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 08:30",
-    "dateSort": 0,
-    "area": "WOLLONGONG",
-    "venue": "Building 9, Sports Hub, UOW",
-    "sortTime": 510,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Building+9,+Sports+Hub,+UOW,+WOLLONGONG,+NSW"
-  },
-  {
-    "type": "🔵",
-    "datetime": "Mon 31/3 07:45",
-    "dateSort": 0,
-    "area": "WAGGA WAGGA",
-    "venue": "Multi-Purpose Stadium (MPS)",
-    "sortTime": 465,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Multi-Purpose+Stadium+(MPS),+WAGGA+WAGGA,+NSW"
-  },
-  {
-    "type": "🔵",
     "datetime": "Mon 31/3 08:00",
-    "dateSort": 0,
-    "area": "EDMONDSON PARK",
+    "area": "Edmondson Park",
     "venue": "Australian Islamic House",
-    "sortTime": 480,
-    "gmaps": "https://www.google.com/maps/search/?api=1&query=Australian+Islamic+House,+EDMONDSON+PARK,+NSW"
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Australian+Islamic+House,+Edmondson+Park,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Emerton",
+    "venue": "Lowles Leisure Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Lowles+Leisure+Centre,+Emerton,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Epping",
+    "venue": "Boronia Grove Community Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Boronia+Grove+Community+Centre,+Epping,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Greenacre",
+    "venue": "Al Hafiz Quran Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Al+Hafiz+Quran+Centre,+Greenacre,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Harrington Park",
+    "venue": "Harrington Park Community Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Harrington+Park+Community+Centre,+Harrington+Park,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Hinchinbrook",
+    "venue": "Masjid Bilal",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+Bilal,+Hinchinbrook,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 07:30",
+    "area": "Hurstville",
+    "venue": "Hurstville Aquatic Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Hurstville+Aquatic+Centre,+Hurstville,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 09:00",
+    "area": "Ingleburn",
+    "venue": "Ingleburn Library ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Ingleburn+Library+(local+sighting),+Ingleburn,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:15",
+    "area": "Kensington",
+    "venue": "ISOC UNSW",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=ISOC+UNSW,+Kensington,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:15",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:45",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 09:30",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 07:15",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:45",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 09:30",
+    "area": "Lakemba",
+    "venue": "Parry Park ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parry+Park+(local+sighting),+Lakemba,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:45",
+    "area": "Lethbridge Park",
+    "venue": "Lethbridge Park Masjid",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Lethbridge+Park+Masjid,+Lethbridge+Park,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Leumeah",
+    "venue": "Campbelltown Masjid",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Campbelltown+Masjid,+Leumeah,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Liverpool",
+    "venue": "Woodward Park (Whitlam Centre if wet weather)",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Woodward+Park+(Whitlam+Centre+if+wet+weather),+Liverpool,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 07:00",
+    "area": "Liverpool",
+    "venue": "Al Iman Mosque",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Al+Iman+Mosque,+Liverpool,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Maroubra",
+    "venue": "Heffron Centre Maroubra",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Heffron+Centre+Maroubra,+Maroubra,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Marsfield",
+    "venue": "Marsfield Community Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsfield+Community+Centre,+Marsfield,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Macquarie Fields",
+    "venue": "Milton Park",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Milton+Park,+Macquarie+Fields,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Macquarie Fields",
+    "venue": "Milton Park",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Milton+Park,+Macquarie+Fields,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Macquarie Park",
+    "venue": "Old Graduation Lawn",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Old+Graduation+Lawn,+Macquarie+Park,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 07:00",
+    "area": "Miller",
+    "venue": "Miller Center",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Miller+Center,+Miller,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Minto",
+    "venue": "Minto Mosque",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Minto+Mosque,+Minto,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:45",
+    "area": "Minto",
+    "venue": "Minto Netball Courts",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Minto+Netball+Courts,+Minto,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 07:45",
+    "area": "Oran Park",
+    "venue": "Oran Park Leisure Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Oran+Park+Leisure+Centre,+Oran+Park,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:15",
+    "area": "Parramatta",
+    "venue": "Parramatta Mosque",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Parramatta+Mosque,+Parramatta,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Prestons",
+    "venue": "Amity College Prestons",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Amity+College+Prestons,+Prestons,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Punchbowl",
+    "venue": "Punchbowl Mosque",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Punchbowl+Mosque,+Punchbowl,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Quakers Hill",
+    "venue": "Quakers Hill Park",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Quakers+Hill+Park,+Quakers+Hill,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Richmond",
+    "venue": "Richmond Masjid",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Richmond+Masjid,+Richmond,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Riverstone",
+    "venue": "Marsden Park Masjid ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid+,+Riverstone,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Riverstone",
+    "venue": "Marsden Park Masjid ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid+,+Riverstone,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Riverstone",
+    "venue": "Marsden Park Masjid ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid+,+Riverstone,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Riverstone",
+    "venue": "Marsden Park Masjid ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid+,+Riverstone,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 07:30",
+    "area": "Riverstone",
+    "venue": "Marsden Park Masjid ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid+,+Riverstone,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:30",
+    "area": "Riverstone",
+    "venue": "Marsden Park Masjid ",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Marsden+Park+Masjid+,+Riverstone,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 08:30",
+    "area": "Rooty Hill",
+    "venue": "Rooty Hill Leisure Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Rooty+Hill+Leisure+Centre,+Rooty+Hill,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Rosehill",
+    "venue": "Rosehill Gardens",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Rosehill+Gardens,+Rosehill,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 09:00",
+    "area": "South Windsor",
+    "venue": "Hawksbury Indoor Stadium",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Hawksbury+Indoor+Stadium,+South+Windsor,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 09:00",
+    "area": "St Marys",
+    "venue": "St Marys Memorial Hall",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=St+Marys+Memorial+Hall,+St+Marys,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Stanhope Gardens",
+    "venue": "Stanhope Leisure Centre",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Stanhope+Leisure+Centre,+Stanhope+Gardens,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 07:45",
+    "area": "Wagga Wagga",
+    "venue": "Multi-Purpose Stadium (MPS)",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Multi-Purpose+Stadium+(MPS),+Wagga+Wagga,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Wolli Creek",
+    "venue": "Masjid Darul Imaan Mosque",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Masjid+Darul+Imaan+Mosque,+Wolli+Creek,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Wollongong",
+    "venue": "Building 9, Sports Hub, UOW",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Building+9,+Sports+Hub,+UOW,+Wollongong,+NSW"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Yagoona",
+    "venue": "O'Neill Park",
+    "state": "NSW",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=O'Neill+Park,+Yagoona,+NSW"
+  },
+  {
+    "datetime": "Tue 1/4 09:00",
+    "area": "Craigieburn",
+    "venue": "Craigieburn Sprint Athletics Centre",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Craigieburn+Sprint+Athletics+Centre,+Craigieburn,+VIC"
+  },
+  {
+    "datetime": "Tue 1/4 07:45",
+    "area": "Dandenong",
+    "venue": "Dandenong Basketball Stadium",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Dandenong+Basketball+Stadium,+Dandenong,+VIC"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Dandenong",
+    "venue": "Faizan-e-Madina Islamic Center",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Faizan-e-Madina+Islamic+Center,+Dandenong,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Hawthorn",
+    "venue": "Swinburne Musalla",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Swinburne+Musalla,+Hawthorn,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Maidstone",
+    "venue": "Maidstone Mosque",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Maidstone+Mosque,+Maidstone,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 09:30",
+    "area": "Maidstone",
+    "venue": "Maidstone Mosque",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Maidstone+Mosque,+Maidstone,+VIC"
+  },
+  {
+    "datetime": "Tue 1/4 08:00",
+    "area": "Melton South",
+    "venue": "Al Iman College",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Al+Iman+College,+Melton+South,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 10:00",
+    "area": "Mount Cottrell",
+    "venue": "Minhaj-Ul-Quran Victoria",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Minhaj-Ul-Quran+Victoria,+Mount+Cottrell,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Tarneit",
+    "venue": "Melbourne Grand Mosque",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Melbourne+Grand+Mosque,+Tarneit,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 09:00",
+    "area": "Tarneit",
+    "venue": "Melbourne Grand Mosque",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Melbourne+Grand+Mosque,+Tarneit,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 10:00",
+    "area": "Tarneit",
+    "venue": "Melbourne Grand Mosque",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Melbourne+Grand+Mosque,+Tarneit,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 10:30",
+    "area": "Tarneit",
+    "venue": "Melbourne Grand Mosque",
+    "state": "VIC",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Melbourne+Grand+Mosque,+Tarneit,+VIC"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Arundel",
+    "venue": "Gold Coast Masjid",
+    "state": "QLD",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Gold+Coast+Masjid,+Arundel,+QLD"
+  },
+  {
+    "datetime": "Mon 31/3 07:45",
+    "area": "Bundall",
+    "venue": "Aquis Centre (for Southport Masjid & Worongary Masjid)",
+    "state": "QLD",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Aquis+Centre+(for+Southport+Masjid+&+Worongary+Masjid),+Bundall,+QLD"
+  },
+  {
+    "datetime": "Tue 1/4 07:00",
+    "area": "Cairns North",
+    "venue": "Abu Bakr as Siddique Masjid",
+    "state": "QLD",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Abu+Baker+as+Siddique+Mosque,+Cairns+North,+QLD"
+  },
+  {
+    "datetime": "Tue 1/4 07:30",
+    "area": "Pimpama",
+    "venue": "Pimpama School of Arts",
+    "state": "QLD",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Pimpama+School+of+Arts,+Pimpama,+QLD"
+  },
+  {
+    "datetime": "Mon 31/3 09:30",
+    "area": "Mitchell",
+    "venue": "Bundawang Pavillion",
+    "state": "ACT",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Bundawang+Pavillion,+Mitchell,+ACT"
+  },
+  {
+    "datetime": "Mon 31/3 07:30",
+    "area": "Monash",
+    "venue": "Canberra Islamic Centre",
+    "state": "ACT",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Canberra+Islamic+Centre,+Monash,+ACT"
+  },
+  {
+    "datetime": "Mon 31/3 09:00",
+    "area": "Monash",
+    "venue": "Canberra Islamic Centre",
+    "state": "ACT",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Canberra+Islamic+Centre,+Monash,+ACT"
+  },
+  {
+    "datetime": "Mon 31/3 09:00",
+    "area": "Moncrieff",
+    "venue": "Taiwan School",
+    "state": "ACT",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Taiwan+School,+Moncrieff,+ACT"
+  },
+  {
+    "datetime": "Mon 31/3 08:30",
+    "area": "Weston Creek",
+    "venue": "Weston Neighbourhood Hall",
+    "state": "ACT",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Weston+Neighbourhood+Hall,+Weston+Creek,+ACT"
+  },
+  {
+    "datetime": "Mon 31/3 08:45",
+    "area": "Weston Creek",
+    "venue": "Weston Neighbourhood Hall",
+    "state": "ACT",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Weston+Neighbourhood+Hall,+Weston+Creek,+ACT"
+  },
+  {
+    "datetime": "Mon 31/3 08:00",
+    "area": "Wandana",
+    "venue": "Wandana Mosque",
+    "state": "S.A",
+    "gmaps": "https://www.google.com/maps/search/?api=1&query=Wandana+Mosque,+Wandana,+S.A"
   }
 ]
